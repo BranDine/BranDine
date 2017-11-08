@@ -18,6 +18,10 @@ def pitch():
 def formdemo():
 	return render_template('formdemo.html')
 
+@app.route('/menu')
+def menu():
+	return render_template('menu.html')
+
 
 if __name__ == '__main__':
     app.run('0.0.0.0',port=3000)
