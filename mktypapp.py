@@ -22,6 +22,17 @@ def formdemo():
 def menu():
 	return render_template('menu.html')
 
+@app.route('/feed')
+def feed():
+	return render_template('feed.html')
+
+@app.route('/traffic')
+def traffic():
+	return render_template('traffic.html')
+
+@app.route('/reviews')
+def reviews():
+	return render_template('reviews.html')
 
 if __name__ == '__main__':
     app.run('0.0.0.0',port=3000)
