@@ -7,8 +7,12 @@ def main():
 	return render_template("main.html")
 
 @app.route('/team')
-def bio():
+def team():
 	return render_template('team.html')
+
+@app.route('/momina')
+def momina():
+	return render_template('momina.html')
 
 @app.route('/pitch')
 def pitch():
@@ -21,6 +25,10 @@ def formdemo():
 @app.route('/menu')
 def menu():
 	return render_template('menu.html')
+
+@app.route('/style.css')
+def css():
+	return render_template('style.css')
 
 
 if __name__ == '__main__':
