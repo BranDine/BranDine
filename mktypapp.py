@@ -26,12 +26,12 @@ def formdemo():
 def menu():
 	return render_template('menu.html')
 
-<<<<<<< HEAD
+
 @app.route('/style.css')
 def css():
 	return render_template('style.css')
 
-=======
+
 @app.route('/feed')
 def feed():
 	return render_template('feed.html')
@@ -43,7 +43,6 @@ def traffic():
 @app.route('/reviews')
 def reviews():
 	return render_template('reviews.html')
->>>>>>> 5e8ed5cdee8f28524a996b2afd5c742a3b6dfd20
-
+ 
 if __name__ == '__main__':
     app.run('0.0.0.0',port=3000)
