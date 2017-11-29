@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="jumbotron">
+  <h1>Scratch Page </h1>
+</div>
+<div>
+Here is where we learn how to create HTML elements....
+<form method="GET" action="processReview">
+which dining hall:
+<select name="hall">
+  <option>Sherman</option>
+  <option>Usdan</option>
+</select>
+<br>
+What food: <input type="text" name="food">
+<br>
+
+<input type="submit">
+</form>
+
+</div>
+
+{% endblock %}
