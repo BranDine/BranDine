@@ -10,6 +10,10 @@ def main():
 def team():
 	return render_template('team.html')
 
+@app.route('/testing')
+def testing():
+	return render_template('testing.html')
+
 @app.route('/momina')
 def momina():
 	return render_template('momina.html')
@@ -43,6 +47,6 @@ def traffic():
 @app.route('/reviews')
 def reviews():
 	return render_template('reviews.html')
- 
+
 if __name__ == '__main__':
     app.run('0.0.0.0',port=3000)
