@@ -158,6 +158,7 @@ def reviews():
 	return render_template('reviews.html',reviews=reviews)
 
 @app.route('/writeReview')
+@require_login
 def writeReview():
 	return render_template('writeReview.html')
 
