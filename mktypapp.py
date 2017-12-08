@@ -19,8 +19,8 @@ from datetime import datetime
 
 app = Flask(__name__)
 #gracehopper.cs-i.brandeis.edu:5000
-#app.config['GOOGLE_ID'] = '783502545148-f4a0ss6kdf839iekmreq1inl2lqnhaqt.apps.googleusercontent.com'
-#app.config['GOOGLE_SECRET'] = '9WksdPKQfOG77hO3DDteRFYr'
+#app.config['GOOGLE_ID'] = '783502545148-reaef0bf2e53i8egcf2fk5lh6trsgs0f.apps.googleusercontent.com'
+#app.config['GOOGLE_SECRET'] = '1OPThK9Nrvo_ybUN_JEO0xpr'
 
 #127.0.0.1:5000
 app.config['GOOGLE_ID'] = '246096591118-ti33uv184e4m1bib9grgn8alm45btadb.apps.googleusercontent.com'
