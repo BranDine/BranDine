@@ -18,15 +18,11 @@ from flask_oauthlib.client import OAuth
 from datetime import datetime
 
 app = Flask(__name__)
-#gracehopper.cs-i.brandeis.edu:5000
+# PRODUCTION Credentials gracehopper.cs-i.brandeis.edu:5400
 #app.config['GOOGLE_ID'] = '783502545148-reaef0bf2e53i8egcf2fk5lh6trsgs0f.apps.googleusercontent.com'
 #app.config['GOOGLE_SECRET'] = '1OPThK9Nrvo_ybUN_JEO0xpr'
 
-#DEVELOPMENT CREDENTIALS 127.0.0.1:5000
-app.config['GOOGLE_ID'] = '246096591118-ti33uv184e4m1bib9grgn8alm45btadb.apps.googleusercontent.com'
-app.config['GOOGLE_SECRET'] = 'iqgLqu6pXgLuHsZFq6nvxDX3'
-
-#PRODUCTION Credentials gracehopper.cs-i.brandeis.edu:5400
+# DEVELOPMENT CREDENTIALS 127.0.0.1:5000
 app.config['GOOGLE_ID'] = '246096591118-ti33uv184e4m1bib9grgn8alm45btadb.apps.googleusercontent.com'
 app.config['GOOGLE_SECRET'] = 'iqgLqu6pXgLuHsZFq6nvxDX3'
 
@@ -202,4 +198,4 @@ def processReview():
 
 if __name__ == '__main__':
     app.run('0.0.0.0',port=5000) # development on 127.0.0.1:5000
-	app.run('0.0.0.0',port=5400) # production on gracehopper.cs-i.brandeis.edu:5400
+    #app.run('0.0.0.0',port=5400) # production on gracehopper.cs-i.brandeis.edu:5400
