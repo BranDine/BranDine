@@ -2,22 +2,42 @@
 {% block content %}
 
 <div class="jumbotron">
-  <h1>Scratch Page </h1>
+  <h1>Brandeis Dining - Flash Reviews </h1>
+	<p> Find out what's happening right now at the campus dining halls!</p>
 </div>
 <div>
-Here is where we learn how to create HTML elements....
-<form method="GET" action="processReview">
-which dining hall:
-<select name="hall">
-  <option>Sherman</option>
-  <option>Usdan</option>
-</select>
-<br>
-What food: <input type="text" name="food">
-<br>
+	<table class="table table-bordered table-striped">
+		<thead>
+			<tr>
+				<td>Review Time</td>
+				<td>Dining Hall</td>
+				<td>Line Length</td>
+				<td>Reviewer</td>
+				<td>Review</td>
+				<td>...</td>
+			</tr>
+		</thead>
+		<tbody>
+			{% for review in reviews %}
+				<tr>
+					<td>{{review.time}}</td>
+					<td> {{review.location}} </td>
+					<td> {{review.lines}} </td>
+					<td> {{review.who}} </td>
+					<td> {{review.review}}</td>
+					<td>
+						<button class="btn btn-sm btm-primary">
+							<span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+						</button>
+						<button class="btn btn-sm btm-primary">
+							<span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span></td>
+						</button>
+					</td>
+				</tr>
+			{% endfor %}
+		</tbody>
+	</table>
 
-<input type="submit">
-</form>
 
 </div>
 
