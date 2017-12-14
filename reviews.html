@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="jumbotron">
+  <h1>Brandeis Dining - Flash Reviews </h1>
+	<p> Find out what's happening right now at the campus dining halls!</p>
+</div>
+<div>
+	<table class="table table-bordered table-striped">
+		<thead>
+			<tr>
+				<td>Review Time</td>
+				<td>Dining Hall</td>
+				<td>Line Length</td>
+				<td>Reviewer</td>
+				<td>Review</td>
+				<td>...</td>
+			</tr>
+		</thead>
+		<tbody>
+			{% for review in reviews %}
+				<tr>
+					<td>{{review.time}}</td>
+					<td> {{review.location}} </td>
+					<td> {{review.lines}} </td>
+					<td> {{review.who}} </td>
+					<td> {{review.review}}</td>
+					<td>
+						<button class="btn btn-sm btm-primary">
+							<span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+						</button>
+						<button class="btn btn-sm btm-primary">
+							<span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span></td>
+						</button>
+					</td>
+				</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+
+
+</div>
+
+{% endblock %}
