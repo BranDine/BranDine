@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="jumbotron">
+  <h1>What's good today??</h1>
+  <p class="text-warning">
+    Write a quick review
+  </p>
+</div>
+<div>
+
+	<form method="POST" action="processReview">
+	<div>
+
+
+	  At <select name="location">
+			<option> Usdan-dining-hall </option>
+			<option> Sherman </option>
+			<option> Faculty Club </option>
+			<option> The Stein </option>
+		</select>
+		the lines are
+		<select name="lines">
+			<option>short </option>
+			<option> medium</option>
+			<option> long </option>
+		</select><br><br>
+		What's good? What's bad?<br>
+		<textarea name="review" rows="5" cols="80"></textarea>
+	  <br><br>
+		<input type="submit" value="Submit Review" class="btn btn-lg btn-danger"><br>
+  </div>
+</form>
+
+{% endblock %}

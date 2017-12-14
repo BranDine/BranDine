@@ -1,4 +1,13 @@
-.cool {
-  background-color:green;
-  font:36pt bold Courier;
+.header {
+  padding: 100px;
+}
+.btn {
+  background-color: red;
+  color: black;
+  border: 2px solid green;
+  padding: 5px;
+  width: inherit;
+}
+.btn:hover{
+  background-color: green;
 }
